@@ -3,10 +3,9 @@ kind: Service
 metadata:
   name: devops-lab-service
 spec:
-  type: NodePort
+  type: LoadBalancer
   selector:
     app: devops-lab
   ports:
-    - port: 5000
+    - port: 80
       targetPort: 5000
-      nodePort: 30080

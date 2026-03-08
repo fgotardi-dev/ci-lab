@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: devops-lab
-          image: devops-lab-flask:1.0
-          imagePullPolicy: IfNotPresent
+          image: 766298030618.dkr.ecr.us-east-1.amazonaws.com/devops-lab-flask:1.0
+          imagePullPolicy: Always
           ports:
             - containerPort: 5000
